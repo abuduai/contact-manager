@@ -2,6 +2,8 @@ import {EventAggregator} from 'aurelia-event-aggregator';
 import {WebAPI} from './web-api';
 import {ContactUpdated, ContactViewed} from './messages';
 import {inject} from 'aurelia-framework';
+import {HttpClient} from 'aurelia-fetch-client';
+
 
 @inject(WebAPI, EventAggregator)
 export class ContactList {
